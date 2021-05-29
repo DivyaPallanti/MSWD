@@ -1,27 +1,27 @@
 import React from 'react'
 
-const Header = (props) => {
+const Header = (pr) => {
   return (
     <div>
       <h1>
-         {props.course}
+         {pr.course}
       </h1>
       
     </div>
   )
 }
-const Content = (props) => {
+const Content = (pr) => {
   return (
     <div>
       <p>
-         {props.part1}       {props.exercises1}
+         {pr.part1}       {pr.exercises1}
 
          </p>
          <p>
-         {props.part2}             {props.exercises2}
+         {pr.part2}             {pr.exercises2}
          </p>
         <p>
-        {props.part3}        {props.exercises3}
+        {pr.part3}        {pr.exercises3}
         </p>
          
       
@@ -30,11 +30,11 @@ const Content = (props) => {
   )
 }
 
-const Total = (props) => {
+const Total = (pr) => {
   return (
     <div>
       <p>
-         Number of exercises  {props.total}
+         Number of exercises  {pr.total}
          
       </p>
       
