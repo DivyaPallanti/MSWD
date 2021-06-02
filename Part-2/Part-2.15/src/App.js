@@ -23,7 +23,7 @@ const App = () => {
 
 const EDetails=(event)=>{
   event.preventDefault()
-  if(persons.find(persons=>persons.name===newName)){
+  if(persons.find(persons=>persons.content===newName)){
     alert(newName+" is already added to the phonebook")
   }
   else if(persons.find(persons=>persons.number===newNumber)){
