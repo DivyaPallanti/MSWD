@@ -137,7 +137,7 @@ const display=persons.filter((filtered)=>{
       <PersonForm onSubmit={EDetails} valueName={newName} onChangeName={handleChange} valueNumber={newNumber} onChangeNumber={handleChangeNumber}/>
       <h2>Numbers</h2>
        {display.map(sort=>
-        <PhoneBook key={sort.id} sort={sort}  removeName={removeName}/>
+        <PhoneDetails key={sort.id} sort={sort}  removeName={removeName}/>
         )}
     </div>
   )
